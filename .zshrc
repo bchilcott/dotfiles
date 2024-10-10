@@ -24,6 +24,9 @@ source "${ZINIT_HOME}/zinit.zsh"
 # powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 # plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -83,17 +86,6 @@ export PATH="/home/ben/.turso:$PATH"
 export PATH=/Users/ben/.sst/bin:$PATH
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# bun completions
-[ -s "/Users/ben/.bun/_bun" ] && source "/Users/ben/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# add Pulumi to the PATH
-export PATH=$PATH:/Users/ben/.pulumi/bin
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 #zprof
