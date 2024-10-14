@@ -51,5 +51,5 @@ return {
   {'windwp/windline.nvim'},
   {'lewis6991/gitsigns.nvim'},
   {'ThePrimeagen/harpoon'},
-  { 'mhartington/formatter.nvim' }
+  { 'mhartington/formatter.nvim' },
 }

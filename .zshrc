@@ -37,7 +37,6 @@ zinit light Aloxaf/fzf-tab
 autoload bashcompinit && bashcompinit
 autoload -U compinit && compinit
 complete -C '/usr/local/bin/aws_completer' aws
-gh completion -s zsh > /Users/ben/.local/share/zinit/completions/_gh
 
 zinit cdreplay -q
 
