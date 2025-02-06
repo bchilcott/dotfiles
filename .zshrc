@@ -89,3 +89,6 @@ export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 #zprof
+
+# bun completions
+[ -s "/Users/ben/.bun/_bun" ] && source "/Users/ben/.bun/_bun"
